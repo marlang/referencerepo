@@ -1,83 +1,135 @@
 {
   "records": [{
+    "Username": "NetFreak",
+    "First": "Xavier",
+    "Last": "Fleischer",
+    "Sex": "M",
+    "Country": "China",
+    "City": "Dongguan",
+    "Portrait": "https://randomuser.me/api/portraits/med/men/13.jpg",
+    "Rep": 8,
+    "Joined": "2015-24-04T20:38:00Z",
+    "Active": "TRUE",
+    "Recent Blast": "I have a cactus named Carlos."
+  }, {
+    "Username": "Max",
+    "First": "Brooks",
+    "Last": "Rockwood",
+    "Sex": "M",
+    "Country": "Democratic Republic of the Congo",
+    "City": "Kinshasa",
+    "Portrait": "https://randomuser.me/api/portraits/med/men/23.jpg",
+    "Rep": 10,
+    "Joined": "2015-03-09T23:42:00Z",
+    "Active": "TRUE",
+    "Recent Blast": "How about those politics?"
+  }, {
+    "Username": "Jellybeans",
+    "First": "Virginia",
+    "Last": "Swicegood",
+    "Sex": "F",
+    "Country": "Ivory Coast",
+    "City": "Abidjan",
+    "Portrait": "https://randomuser.me/api/portraits/med/women/24.jpg",
+    "Rep": 3,
+    "Joined": "2015-12-09T15:06:00Z",
+    "Active": "TRUE",
+    "Recent Blast": "Choosing your socks by how much glue they have on them isn't right."
+  }, {
+    "Username": "Glimmers",
+    "First": "Conchita",
+    "Last": "Fyffe",
+    "Sex": "F",
+    "Country": "Peru",
+    "City": "Lima",
+    "Portrait": "https://randomuser.me/api/portraits/med/women/14.jpg",
+    "Rep": 7,
+    "Joined": "2015-14-05T09:58:00Z",
+    "Active": "TRUE",
+    "Recent Blast": "Did you ever notice that pineapples never wear bathrobes?"
+  }, {
+    "Username": "Metalhead",
+    "First": "Wilburn",
+    "Last": "Bryer",
+    "Sex": "M",
+    "Country": "Egypt",
+    "City": "Cairo",
+    "Portrait": "https://randomuser.me/api/portraits/med/men/3.jpg",
+    "Rep": 1,
+    "Joined": "2015-14-01T16:21:00Z",
+    "Active": "TRUE",
+    "Recent Blast": "I set fire to the rain"
+  }, {
+    "Username": "chiquitita",
+    "First": "Pilar",
+    "Last": "Hance",
+    "Sex": "F",
+    "Country": "South Africa",
+    "City": "Cape Town",
+    "Portrait": "https://randomuser.me/api/portraits/med/women/10.jpg",
+    "Rep": 1,
+    "Joined": "2015-05-04T08:54:00Z",
+    "Active": "TRUE",
+    "Recent Blast": "When life gives you lemons,chuck them at people you hate."
+  }, {
+    "Username": "Lil Miss Silly",
+    "First": "Cheryll",
+    "Last": "Luthy",
+    "Sex": "F",
+    "Country": "Mexico",
+    "City": "Mexico City",
+    "Portrait": "https://randomuser.me/api/portraits/med/women/15.jpg",
+    "Rep": 4,
+    "Joined": "2015-18-05T10:35:00Z",
+    "Active": "TRUE",
+    "Recent Blast": "Flying dogs like cheese."
+  }, {
+    "Username": "The Prophet",
+    "First": "Quinton",
+    "Last": "Garces",
+    "Sex": "M",
+    "Country": "Vietnam",
+    "City": "Hanoi",
+    "Portrait": "https://randomuser.me/api/portraits/med/men/14.jpg",
+    "Rep": 10,
+    "Joined": "2015-25-04T20:52:00Z",
+    "Active": "TRUE",
+    "Recent Blast": "My karma ran over your dogma"
+  }, {
+    "Username": "Bubblegum",
+    "First": "Krishna",
+    "Last": "Carreiro",
+    "Sex": "F",
+    "Country": "Pakistan",
+    "City": "Karachi",
+    "Portrait": "https://randomuser.me/api/portraits/med/women/2.jpg",
+    "Rep": 3,
+    "Joined": "2015-15-01T02:41:00Z",
+    "Active": "TRUE",
+    "Recent Blast": "Banana error."
+  }, {
+    "Username": "Wokie",
+    "First": "Keenan",
+    "Last": "Curley",
+    "Sex": "M",
+    "Country": "Japan",
+    "City": "Yokohama",
+    "Portrait": "https://randomuser.me/api/portraits/med/men/15.jpg",
+    "Rep": 9,
+    "Joined": "2015-03-05T21:37:00Z",
+    "Active": "TRUE",
+    "Recent Blast": "In the beginning and owl is always right."
+  }, {
     "Username": "bearhugs",
     "First": "Melynda",
     "Last": "Ochoa",
     "Sex": "F",
+    "Country": "South Korea",
+    "City": "Seoul",
     "Portrait": "https://randomuser.me/api/portraits/med/women/22.jpg",
+    "Rep": 8,
     "Joined": "2015-28-08T14:35:00Z",
-    "Recent Blast": "Food trucks are great! Can't wait for flying food drones!"
-  }, {
-    "Username": "Black Sheep",
-    "First": "Ellis",
-    "Last": "Quon",
-    "Sex": "M",
-    "Portrait": "https://randomuser.me/api/portraits/med/men/10.jpg",
-    "Joined": "2015-23-03T19:12:00Z",
-    "Recent Blast": "When is the next New Years Eve?"
-  }, {
-    "Username": "Romeo",
-    "First": "Mitch",
-    "Last": "Stockard",
-    "Sex": "M",
-    "Portrait": "https://randomuser.me/api/portraits/med/men/9.jpg",
-    "Joined": "2015-12-03T18:48:00Z",
-    "Recent Blast": "This place is starting to get weird."
-  }, {
-    "Username": "Angel Doll",
-    "First": "Lidia",
-    "Last": "Stanwood",
-    "Sex": "F",
-    "Portrait": "https://randomuser.me/api/portraits/med/women/4.jpg",
-    "Joined": "2015-28-01T03:47:00Z",
-    "Recent Blast": "On a scale from one to ten what is your favourite colour of the alphabet?"
-  }, {
-    "Username": "Bad Ass",
-    "First": "Harrison",
-    "Last": "Criger",
-    "Sex": "M",
-    "Portrait": "https://randomuser.me/api/portraits/med/men/6.jpg",
-    "Joined": "2015-10-02T17:53:00Z",
-    "Recent Blast": "Chuck Norris on a Sheen of Winning"
-  }, {
-    "Username": "NoisYBoY",
-    "First": "Alden",
-    "Last": "Lugo",
-    "Sex": "M",
-    "Portrait": "https://randomuser.me/api/portraits/med/men/17.jpg",
-    "Joined": "2015-10-06T22:03:00Z",
-    "Recent Blast": "I think this is the random part of the Internet."
-  }, {
-    "Username": "Black Hawk",
-    "First": "Lee",
-    "Last": "Robinett",
-    "Sex": "M",
-    "Portrait": "https://randomuser.me/api/portraits/med/men/16.jpg",
-    "Joined": "2015-05-05T21:42:00Z",
-    "Recent Blast": "That's where I saw the leprechaun"
-  }, {
-    "Username": "Battledoom",
-    "First": "Donovan",
-    "Last": "Leist",
-    "Sex": "M",
-    "Portrait": "https://randomuser.me/api/portraits/med/men/18.jpg",
-    "Joined": "2015-19-06T22:23:00Z",
-    "Recent Blast": "That's unpossible"
-  }, {
-    "Username": "Melody",
-    "First": "Barbara",
-    "Last": "Bartol",
-    "Sex": "F",
-    "Portrait": "https://randomuser.me/api/portraits/med/women/6.jpg",
-    "Joined": "2015-10-02T05:20:00Z",
-    "Recent Blast": "Look,a distraction!"
-  }, {
-    "Username": "Crashtest",
-    "First": "Rick",
-    "Last": "Maybee",
-    "Sex": "M",
-    "Portrait": "https://randomuser.me/api/portraits/med/men/12.jpg",
-    "Joined": "2015-22-04T20:11:00Z",
-    "Recent Blast": "Invisible Terminator,BLAARGH!"
- }]
+    "Active": "TRUE",
+    "Recent Blast": "When does the 5 o'clock news start?"
+  }]
 }

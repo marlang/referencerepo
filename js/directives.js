@@ -35,30 +35,53 @@ app.directive('scrollArrow', function() {
   };
 });
 
+var randomizeArray = function(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array;
+};
+
 app.directive('blastList', function() {
   return {
     restrict: 'E',
     scope: {
       blasts: '='
     },
+    replace: true,
     templateUrl: 'blast-list.html',
     link: function(scope) {
       var displayLength = 5,
-        currentIndex = 0;
+        currentIndex = displayLength - 1;
       scope.visibleBlasts = [];
+      var vis = scope.visibleBlasts;
 
-      scope.scroll = function(amount) {
-        //clear visible list
-        scope.visibleBlasts.length = 0;
-        //update current index, keeping range between 0 and total size of the blasts list (minus the visible window size)
-        currentIndex = Math.min(Math.max(currentIndex + amount, 0), scope.blasts.length - 1 - displayLength);
-        //merge the slice of the blasts chosen into the visibleBlasts scope variable
-        $.merge(scope.visibleBlasts, scope.blasts.slice(currentIndex, currentIndex + displayLength));
+      scope.scrollUp = function() {
+        var newIndex = Math.max(currentIndex - 1, displayLength - 1);
+        if (newIndex != currentIndex) {
+          currentIndex = newIndex;
+          scope.visibleBlasts.pop();
+          scope.visibleBlasts.unshift(scope.blasts[currentIndex - (displayLength - 1)]);
+        }
       };
+
+      scope.scrollDown = function() {
+        var newIndex = Math.min(currentIndex + 1, scope.blasts.length - 1 - displayLength);
+        if (newIndex != currentIndex) {
+          currentIndex = newIndex;
+          scope.visibleBlasts.shift();
+          scope.visibleBlasts.push(scope.blasts[currentIndex]);
+        }
+      }
 
       scope.$watch('blasts', function(newValue, oldValue) {
         if (newValue) {
-          scope.scroll(0);
+          for (var i = 0; i < displayLength; i++) {
+            scope.visibleBlasts.push(scope.blasts[i]);
+          }
         }
       });
     }

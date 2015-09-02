@@ -1,4 +1,4 @@
-var app = angular.module('MasterBlaster', ['uiGmapgoogle-maps', 'ngStorage']);
+var app = angular.module('MasterBlaster', ['uiGmapgoogle-maps', 'ngStorage', 'ngAnimate']);
 
 app.controller('BlastList', ['$scope', '$http', 'BlastService', 'AdService', 'GeoService', '$timeout', function($scope, $http, BlastService, AdService, GeoService, $timeout) {
   var adPeriod = 4;

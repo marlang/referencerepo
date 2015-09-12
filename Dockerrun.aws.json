@@ -1,0 +1,14 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+        "Name": "<IMAGE_NAME>:<TAG>",
+        "Update": "true"
+    },
+    "Ports": [{
+        "ContainerPort": "3000"
+    }],
+    "Authentication": {
+        "Bucket": "shippable-deploy",
+        "Key": "<DOCKER_CONFIG>"
+    }
+}

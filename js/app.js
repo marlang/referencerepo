@@ -1,6 +1,6 @@
 var app = angular.module('MasterBlaster', []);
 
-app.controller('BlastList', ['$scope', '$http', 'BlastService', 'AdService', function($scope, $http, BlastService, AdService) {
+app.controller('BlastController', ['$scope', '$http', 'BlastService', 'AdService', function($scope, $http, BlastService, AdService) {
   var adPeriod = 4;
   BlastService.list().success(function(blastFeed) {
     AdService.list().success(function(adFeed) {

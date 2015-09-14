@@ -55,9 +55,9 @@ app.directive('blastList', ['$timeout', function($timeout) {
     templateUrl: 'blast-list.html',
     link: function(scope) {
       var displayLength = 3,
+        autoscrollPeriod = 5000,
         currentIndex = displayLength - 1;
       scope.visibleBlasts = [];
-      var vis = scope.visibleBlasts;
 
       scope.scrollUp = function() {
         var newIndex = Math.max(currentIndex - 1, displayLength - 1);
@@ -88,7 +88,7 @@ app.directive('blastList', ['$timeout', function($timeout) {
         if (scope.blasts) {
           scope.scrollDown();
         }
-        $timeout(scope.autoscroll, 3000);
+        $timeout(scope.autoscroll, autoscrollPeriod);
       };
 
 

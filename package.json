@@ -8,6 +8,8 @@
     "start": "node www.app.js"    
   },
   "devDependencies": {
+    "angular": "^1.4.1",
+    "angular-mocks": "^1.4.1",
     "jshint": "^2.8.0",
     "phantomjs": "^1.9.17",
     "jasmine-core": "^2.3.4",

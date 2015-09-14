@@ -1,6 +1,6 @@
 var app = angular.module('MasterBlaster', ['uiGmapgoogle-maps', 'ngStorage', 'ngAnimate']);
 
-app.controller('BlastList', ['$scope', '$http', 'BlastService', 'AdService', 'GeoService', '$timeout', function($scope, $http, BlastService, AdService, GeoService, $timeout) {
+app.controller('BlastController', ['$scope', '$http', 'BlastService', 'AdService', 'GeoService', '$timeout', function($scope, $http, BlastService, AdService, GeoService, $timeout) {
   var adPeriod = 4;
   BlastService.list().success(function(blastFeed) {
     AdService.list().success(function(adFeed) {

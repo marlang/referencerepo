@@ -4,12 +4,6 @@
     padding: 0px 0px 0px 42px;
 }
 
-@media (min-width: 1200px) {
-    .blast-list {
-        height: 700px;
-    }
-}
-
 .title {
     margin-bottom: 30px;
     font-size: 40px;
@@ -17,11 +11,17 @@
 }
 
 .footer {
-    margin-top: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
 }
 
 .map h2 {
     font-weight: normal;
+}
+
+.blast-container {
+    top: 65px;
 }
 
 .blast {
@@ -39,6 +39,12 @@
 
 .blast .post {
     font-size: 20px;
+}
+
+.blast .location {
+    position: absolute;
+    right: 26px;
+    bottom: 15px;
 }
 
 .ad {
@@ -103,8 +109,8 @@
 }
 
 .angular-google-map-container {
-    top: 30px;
-    min-height: 600px;
+    top: 60px;
+    min-height: 410px;
     min-width: 400px;
     max-width: 95%;
 }

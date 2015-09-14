@@ -45,7 +45,7 @@ var randomizeArray = function(array) {
   return array;
 };
 
-app.directive('blastList', function() {
+app.directive('blastList', ['$timeout', function($timeout) {
   return {
     restrict: 'E',
     scope: {
@@ -54,10 +54,10 @@ app.directive('blastList', function() {
     replace: true,
     templateUrl: 'blast-list.html',
     link: function(scope) {
-      var displayLength = 5,
+      var displayLength = 3,
+        autoscrollPeriod = 5000,
         currentIndex = displayLength - 1;
       scope.visibleBlasts = [];
-      var vis = scope.visibleBlasts;
 
       scope.scrollUp = function() {
         var newIndex = Math.max(currentIndex - 1, displayLength - 1);
@@ -77,13 +77,28 @@ app.directive('blastList', function() {
         }
       }
 
+      scope.reset = function() {
+        scope.visibleBlasts = [];
+        for (var i = 0; i < displayLength; i++) {
+          scope.visibleBlasts.push(scope.blasts[i]);
+        }
+      };
+
+      scope.autoscroll = function() {
+        if (scope.blasts) {
+          scope.scrollDown();
+        }
+        $timeout(scope.autoscroll, autoscrollPeriod);
+      };
+
+
       scope.$watch('blasts', function(newValue, oldValue) {
         if (newValue) {
-          for (var i = 0; i < displayLength; i++) {
-            scope.visibleBlasts.push(scope.blasts[i]);
-          }
+          scope.reset();
         }
       });
+
+      scope.autoscroll();
     }
   };
-});
+}]);

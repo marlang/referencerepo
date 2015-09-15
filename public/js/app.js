@@ -1,4 +1,4 @@
-var app = angular.module('MasterBlaster', ['uiGmapgoogle-maps', 'ngStorage']);
+var app = angular.module('MasterBlaster', ['uiGmapgoogle-maps', 'ngStorage', 'ngAnimate']);
 
 app.controller('BlastController', ['$scope', '$http', 'BlastService', 'AdService', 'GeoService', '$timeout', function($scope, $http, BlastService, AdService, GeoService, $timeout) {
   var adPeriod = 4;
@@ -30,7 +30,7 @@ app.controller('BlastController', ['$scope', '$http', 'BlastService', 'AdService
 
     function fetchLocations() {
       //Google Map loads asynchronously, need to wait for it to load
-      if (google.maps.Size == undefined) {
+      if (window.google == undefined || window.google.maps.Size == undefined) {
         $timeout(fetchLocations, 10);
         return;
       }
@@ -43,7 +43,7 @@ app.controller('BlastController', ['$scope', '$http', 'BlastService', 'AdService
             latitude: data.lat,
             longitude: data.lng,
             icon: {
-              url: 'http://www.clker.com/cliparts/U/8/J/z/5/D/google-maps-icon-blue-hi.png',
+              url: 'img/google-maps-icon-blue.png',
               scaledSize: new google.maps.Size(18, 28),
             },
             opts: {

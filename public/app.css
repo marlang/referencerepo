@@ -6,10 +6,22 @@
 
 .title {
     margin-bottom: 30px;
+    font-size: 40px;
+    font-family: "Josefin Sans";
 }
 
 .footer {
-    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+
+.map h2 {
+    font-weight: normal;
+}
+
+.blast-container {
+    top: 65px;
 }
 
 .blast {
@@ -29,6 +41,12 @@
     font-size: 20px;
 }
 
+.blast .location {
+    position: absolute;
+    right: 26px;
+    bottom: 15px;
+}
+
 .ad {
     margin-bottom: 20px;
     height: 120px;
@@ -45,7 +63,7 @@
     -ms-transform: rotate(-180deg) scale(16, 4);
     -o-transform: rotate(-180deg) scale(16, 4);
     filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=6);
-    padding-right: 1px;
+    margin-left: 40px;
 }
 
 .up-arrow {
@@ -55,6 +73,16 @@
     -ms-transform: scale(16, 4);
     -o-transform: scale(16, 4);
     margin-bottom: 20px;
+}
+
+.scroll {
+    background-color: transparent;
+    border: none;
+}
+
+.scroll:focus {
+    border: none;
+    outline: none;
 }
 
 .profile {
@@ -81,8 +109,8 @@
 }
 
 .angular-google-map-container {
-    top: 80px;
-    min-height: 600px;
+    top: 60px;
+    min-height: 410px;
     min-width: 400px;
     max-width: 95%;
 }
@@ -111,4 +139,61 @@
 .markerLabels {
     color: #ffffff;
     opacity: 1 !important;
+}
+
+.person {
+    transition: all 0.15s ease;
+}
+
+.person.ng-move {
+    position: relative;
+    top: 26px;
+}
+
+.person.ng-move.person.ng-move-active {
+    transition: all 0.15s ease;
+    top: 0;
+}
+
+.person.ng-move + div {
+    /* cannot have transition on this element */
+    /*transition: all 1s ease;*/
+    position: relative;
+    top: -26px;
+}
+
+.person.ng-move.person.ng-move-active + div {
+    transition: all 0.15s ease;
+    position: relative;
+    top: 0;
+}
+
+.person.ng-enter {
+    position: relative;
+    opacity: 0.0;
+    height: 0;
+    left: 100px;
+}
+
+.person.ng-enter.person.ng-enter-active {
+    transition: all 0.15s ease;
+    opacity: 1.0;
+    left: 0;
+    height: 26px;
+}
+
+.person.ng-leave {
+    position: relative;
+    opacity: 1.0;
+    left: 0;
+    height: 26px;
+    z-index: -100;
+}
+
+.person.ng-leave.person.ng-leave-active {
+    transition: all 0.15s ease;
+    opacity: 0.0;
+    left: 100px;
+    height: 0;
+    top: -13px;
 }
